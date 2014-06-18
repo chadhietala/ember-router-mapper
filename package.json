@@ -1,0 +1,29 @@
+{
+  "name": "ember-router-mapper",
+  "version": "0.0.1",
+  "description": "Resolves Ember Route and Resource Definitions",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha --watch --reporter spec tests/**/*.spec.js"
+  },
+  "dependencies": {
+    "ember-metal": "^0.9.2",
+    "ember-runtime": "^0.9.2",
+    "ember-runtime-node": "^1.0.0-pre.2",
+    "esprima": "git://github.com/thomasboyt/esprima#4be906f1abcbb",
+    "hashtree": "^0.4.1",
+    "lodash": "^2.4.1"
+  },
+  "author": "Chad Hietala",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.20.1"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [
+    "ember"
+  ]
+}
