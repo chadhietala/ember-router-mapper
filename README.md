@@ -9,7 +9,7 @@ Given a router that looks like this
 ```
 import Ember from "ember";
 var Router = Ember.Router.extend({
-    location: PhoenixENV.locationType
+    location: FooENV.locationType
 });
 Router.map(function () {
     this.resource("index");
@@ -30,8 +30,7 @@ Router.map(function () {
         this.route("lion")
     })
 });
-export
-default Router;
+export default Router;
 
 ```
 
