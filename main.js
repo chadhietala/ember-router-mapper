@@ -7,7 +7,7 @@ var isFunctionCall = function( node ) {
 
 function Parser ( text, config ) {
   var config = config || {};
-  config.prefix = config.prefix || 'app';
+  config.prefix = config.prefix || 'app/routes';
   this.config = config;
   this.tree = {};
   this.inspectClass(text, 'Router.map', [ 'resource', 'route' ]);
@@ -118,7 +118,7 @@ Parser.prototype = Object.create({
   buildTree: function ( nodes ) {
 
     // Set the top level nodes
-    this.tree[ nodes[ 0 ].value ] = this.config.prefix + '/routes/' + nodes[ 0 ].value
+    this.tree[ nodes[ 0 ].value ] = this.config.prefix + '/' + nodes[ 0 ].value
 
     // Start creating the branches of the tree
     if ( nodes.length > 1 && nodes[ 1 ].type === 'FunctionExpression' ) {
@@ -134,7 +134,7 @@ Parser.prototype = Object.create({
       name = node.expression.arguments[ 0 ].value;
       path = root + '/' + name;
 
-      this.tree[ path ] = this.config.prefix + '/routes/' + path;
+      this.tree[ path ] = this.config.prefix + '/' + path;
 
       // If we're nested lets recurse
       if ( node.expression.arguments.length === 2 ) {
