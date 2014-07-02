@@ -38,17 +38,17 @@ It will produce this.
 
 ```
 {
-  "index": "app/index",
-  "post": "app/post",
-  "book": "app/book",
-  "car": "app/car",
-  "car/new": "app/car/new",
-  "car/baz": "app/car/baz",
-  "car/baz/boo": "app/car/baz/boo",
-  "car/baz/fizz": "app/car/baz/fizz",
-  "car/baz/fizz/dog": "app/car/baz/fizz/dog",
-  "cat": "app/cat",
-  "cat/lion": "app/cat/lion"
+  "index": "app/routes/index",
+  "post": "app/routes/post",
+  "book": "app/routes/book",
+  "car": "app/routes/car",
+  "car/new": "app/routes/car/new",
+  "car/baz": "app/routes/car/baz",
+  "car/baz/boo": "app/routes/car/baz/boo",
+  "car/baz/fizz": "app/routes/car/baz/fizz",
+  "car/baz/fizz/dog": "app/routes/car/baz/fizz/dog",
+  "cat": "app/routes/cat",
+  "cat/lion": "app/routes/cat/lion"
 }
 
 ```
